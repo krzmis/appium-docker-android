@@ -47,7 +47,7 @@ function create_capabilities() {
     "version": "$os_version",
     "browserName": "$BROWSER_NAME",
     "deviceName": "$name",
-    "maxInstances": 1,
+    "maxInstances": 10,
     "applicationName": "$serial_number"
   }
 _EOF
@@ -70,7 +70,7 @@ nodeconfig=$(cat <<_EOF
     "url": "http://$APPIUM_HOST:$APPIUM_PORT/wd/hub",
     "host": "$APPIUM_HOST",
     "port": $APPIUM_PORT,
-    "maxSession": 6,
+    "maxSession": 10,
     "register": true,
     "registerCycle": 5000,
     "hubHost": "$SELENIUM_HOST",
