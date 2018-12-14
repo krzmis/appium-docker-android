@@ -2,5 +2,6 @@
 */temp*
 */*/temp*
 temp?
+.idea
 *.md
 !README.md
